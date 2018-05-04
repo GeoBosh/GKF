@@ -10,7 +10,7 @@ posterior distribution.
 
 # Installing GKF
 
-You can also install the [development version](https://github.com/GeoBosh/GKF) of `GKF` from Github:
+You can install the [development version](https://github.com/GeoBosh/GKF) of `GKF` from Github:
 
     library(devtools)
     install_github("GeoBosh/GKF")

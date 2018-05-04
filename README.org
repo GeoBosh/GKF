@@ -19,7 +19,7 @@ posterior distribution.
 # #+END_EXAMPLE
 
 
-You can also install the [[https://github.com/GeoBosh/GKF][development version]] of =GKF= from Github:
+You can install the [[https://github.com/GeoBosh/GKF][development version]] of =GKF= from Github:
 #+BEGIN_EXAMPLE
 library(devtools)
 install_github("GeoBosh/GKF")
