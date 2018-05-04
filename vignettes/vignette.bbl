@@ -1,0 +1,109 @@
+\begin{thebibliography}{}
+
+\bibitem[Berndt, 1991]{berndt1991practice}
+Berndt, E.~R. (1991).
+\newblock {\em The practice of econometrics: classic and contemporary}.
+\newblock Addison-Wesley Reading, MA.
+
+\bibitem[Borsdorf and Higham, 2010]{borsdorf2010preconditioned}
+Borsdorf, R. and Higham, N.~J. (2010).
+\newblock A preconditioned newton algorithm for the nearest correlation matrix.
+\newblock {\em IMA Journal of Numerical Analysis}, 30(1):94--107.
+
+\bibitem[Boyle and Dykstra, 1986]{boyle1986method}
+Boyle, J.~P. and Dykstra, R.~L. (1986).
+\newblock A method for finding projections onto the intersection of convex sets
+  in hilbert spaces.
+\newblock In {\em Advances in order restricted statistical inference}, pages
+  28--47. Springer.
+
+\bibitem[Carter and Kohn, 1994]{carter1994gibbs}
+Carter, C.~K. and Kohn, R. (1994).
+\newblock On gibbs sampling for state space models.
+\newblock {\em Biometrika}, 81(3):541--553.
+
+\bibitem[De~Jong and Shephard, 1995]{de1995simulation}
+De~Jong, P. and Shephard, N. (1995).
+\newblock The simulation smoother for time series models.
+\newblock {\em Biometrika}, 82(2):339--350.
+
+\bibitem[Durbin and Koopman, 2002]{durbin2002simple}
+Durbin, J. and Koopman, S.~J. (2002).
+\newblock A simple and efficient simulation smoother for state space time
+  series analysis.
+\newblock {\em Biometrika}, 89(3):603--616.
+
+\bibitem[Durbin and Koopman, 2012]{durbin2012time}
+Durbin, J. and Koopman, S.~J. (2012).
+\newblock {\em Time series analysis by state space methods.Second edition}.
+\newblock Oxford University Press.
+
+\bibitem[Fr{\"u}hwirth-Schnatter, 1994]{fruhwirth1994data}
+Fr{\"u}hwirth-Schnatter, S. (1994).
+\newblock Data augmentation and dynamic linear models.
+\newblock {\em Journal of time series analysis}, 15(2):183--202.
+
+\bibitem[Helske, 2017]{KFASjss2017}
+Helske, J. (2017).
+\newblock {KFAS}: Exponential family state space models in {R}.
+\newblock {\em Journal of Statistical Software}, 78(10):1--39.
+
+\bibitem[Higham, 2002]{higham2002computing}
+Higham, N.~J. (2002).
+\newblock Computing the nearest correlation matrix—a problem from finance.
+\newblock {\em IMA journal of Numerical Analysis}, 22(3):329--343.
+
+\bibitem[Jungbacker and Koopman, 2007]{jungbacker2007monte}
+Jungbacker, B. and Koopman, S.~J. (2007).
+\newblock Monte carlo estimation for nonlinear non-gaussian state space models.
+\newblock {\em Biometrika}, 94(4):827--839.
+
+\bibitem[Koopman and Lit, 2014]{koopman2013dynamic}
+Koopman, S.~J. and Lit, R. (2014).
+\newblock A dynamic bivariate poisson model for analysing and forecasting match
+  results in the english premier league.
+\newblock {\em Journal of the Royal Statistical Society: Series A (Statistics
+  in Society)}.
+
+\bibitem[Li and Qi, 2011]{li2011sequential}
+Li, Q. and Qi, H.-d. (2011).
+\newblock A sequential semismooth newton method for the nearest low-rank
+  correlation matrix problem.
+\newblock {\em SIAM Journal on Optimization}, 21(4):1641--1666.
+
+\bibitem[Luethi et~al., 2014]{FKFpackage}
+Luethi, D., Erb, P., and Otziger, S. (2014).
+\newblock {\em FKF: Fast Kalman Filter}.
+\newblock R package version 0.1.3.
+
+\bibitem[Maechler and Bates, 2006]{maechler20062nd}
+Maechler, M. and Bates, D. (2006).
+\newblock 2nd introduction to the matrix package.
+
+\bibitem[Nash, 2014]{optimx2014}
+Nash, J.~C. (2014).
+\newblock On best practice optimization methods in {R}.
+\newblock {\em Journal of Statistical Software}, 60(2):1--14.
+
+\bibitem[Petris, 2010]{petris2010dlm}
+Petris, G. (2010).
+\newblock An {R} package for dynamic linear models.
+\newblock {\em Journal of Statistical Software}, 36(12):1--16.
+
+\bibitem[Petris et~al., 2009]{petris2009dynamic}
+Petris, G., Petrone, S., and Campagnoli, P. (2009).
+\newblock {\em Dynamic Linear Models with R}.
+\newblock useR! Springer-Verlag, New York.
+
+\bibitem[Sanderson et~al., 2010]{sanderson2010armadillo}
+Sanderson, C. et~al. (2010).
+\newblock Armadillo: An open source c++ linear algebra library for fast
+  prototyping and computationally intensive experiments.
+\newblock {\em Report Version}, 2.
+
+\bibitem[Shephard, 1994]{shephard1994partial}
+Shephard, N. (1994).
+\newblock Partial non-gaussian state space.
+\newblock {\em Biometrika}, 81(1):115--131.
+
+\end{thebibliography}

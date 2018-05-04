@@ -1,0 +1,60 @@
+# Changes in Version 1.6
+
+- first changes since Feb 2015 - version 1.5 was installing ok and passing `R
+  CMD check' with some warnings, most important about registration of
+  symbols. To make any changes, needed to update the use of Rcpp, in particular
+  to use compileAttributes(), which led to rather troublesome digging into
+  compiling errors. The main changes are noted below.
+
+- replaced makevars and makevars.win with newer ones.
+
+- now use compileAttributes() - for this to work removed some manual code
+  elsewhere and added an underscore in the .CALL's in C_Iinterface.R
+
+- add RcppExports.R to Collate field in DESCRIPTION.
+
+- bug fix: in nearPD() in C_INTERFACE.R the call to the C++ function contained
+  an additional argument (trace) which caused warnings and errors in R CMD
+  check.
+
+- edited the vignette
+   
+- moved dlm to `Suggests`.
+     
+- moved FKF to `Suggests`. FKF is currently archived on CRAN, so further
+  defensive measures may be needed. Eventually dropped FKF from the `Suggests`
+  field. Modified the vignette to load a precomputed object and left the command
+  to create it in the vignette (but commented).
+
+- numerous other small changes
+
+
+# Changes in Version 1.4
+   
+- vignette included
+
+- dlm and FKF are imported (just used in vignette).
+
+- cout replaced by Rf_warning.
+
+- DESCRIPTION file updated by removing RcppArmadillo from Imports.
+
+
+# Changes in Version 1.3
+ 
+- nearPD function (nearest Positive Definite) improved to be more closer to
+  Hingham algorithm
+
+
+# Changes in Version 1.2
+ 
+- nearPD function (nearest Positive Definite) which deals with possible small
+  (or negative) eigenvalues in the covariance matrix.
+
+
+# Changes in Version 1.1
+
+- Computes the unconditional (log) likelihood of the signal in function FKF
+
+- FKF slightly modified to take into account this update but default arguments
+  are provided

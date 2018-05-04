@@ -1,0 +1,91 @@
+;; -*- mode: emacs-lisp; coding: emacs-mule; -*-
+;; --------------------------------------------------------------------------
+;; Desktop File for Emacs
+;; --------------------------------------------------------------------------
+;; Created Fri Mar 30 15:51:04 2018
+;; Desktop file format version 208
+;; Emacs version 25.3.1
+
+;; Global section:
+(setq desktop-saved-frameset [frameset 1 (23230 20184 77753 800000) (desktop . "208") "mcbssgb2@E-L07MAAT1125C" nil nil ((((font-backend uniscribe gdi) (font . "-outline-Courier New-normal-normal-normal-mono-13-*-*-*-c-*-iso8859-1") (border-width . 2) (internal-border-width . 0) (right-divider-width . 0) (bottom-divider-width . 0) (vertical-scroll-bars . right) (horizontal-scroll-bars) (foreground-color . "SystemWindowText") (background-color . "SystemWindow") (mouse-color . "black") (border-color . "black") (screen-gamma) (line-spacing) (left-fringe . 8) (right-fringe . 8) (alpha) (menu-bar-lines . 1) (tool-bar-lines . 3) (height . 61) (title) (icon-type) (auto-raise) (auto-lower) (cursor-type . box) (scroll-bar-width . 17) (scroll-bar-height . 0) (fullscreen) (display-type . color) (background-mode . light) (cursor-color . "black") (environment) (frameset--id . "DAF8-043A-6B2F-935B") (frameset--mini t . t) (modeline . t) (minibuffer . t) (unsplittable) (icon-name) (visibility . t) (display . "w32") (explicit-name) (tool-bar-position . top) (width . 210) (left + -1922) (top + -314)) ((min-height . 4) (min-width . 20) (min-height-ignore . 2) (min-width-ignore . 14) (min-height-safe . 1) (min-width-safe . 4) (min-pixel-height . 64) (min-pixel-width . 160) (min-pixel-height-ignore . 32) (min-pixel-width-ignore . 112) (min-pixel-height-safe . 16) (min-pixel-width-safe . 32)) hc (pixel-width . 1713) (pixel-height . 972) (total-width . 214) (total-height . 61) (normal-height . 1.0) (normal-width . 1.0) (combination-limit) (leaf (pixel-width . 856) (pixel-height . 972) (total-width . 107) (total-height . 61) (normal-height . 1.0) (normal-width . 0.49970811441914764) (buffer "vignettes" (selected . t) (hscroll . 0) (fringes 8 8 nil) (margins nil) (scroll-bars nil 3 t nil 0 t) (vscroll . 0) (dedicated) (point . 1542) (start . 1))) (leaf (last . t) (pixel-width . 857) (pixel-height . 972) (total-width . 107) (total-height . 61) (normal-height . 1.0) (normal-width . 0.5002918855808524) (buffer "NEWS.md" (selected) (hscroll . 0) (fringes 8 8 nil) (margins nil) (scroll-bars nil 3 t nil 0 t) (vscroll . 0) (dedicated) (point . 94) (start . 1)))))])
+(setq desktop-missing-file-warning nil)
+(setq tags-file-name nil)
+(setq tags-table-list nil)
+(setq search-ring '("comment" "is this" "is this the intent" "eq:measurement" "eqmeasurement" "Conclusion" ";" "lemma" "resulting" "i.e." "max" "oal" "maechle" "fkf" "KFAS" "durbin2012"))
+(setq regexp-search-ring nil)
+(setq register-alist '((48 . "This is reflected in t") (51 . "#+BEGIN_SRC R :tangle ../tests/testthat/test-ragged.R\n#+END_SRC \n") (97 . "\\author{Georgin N. Boshnakov}\n") (70 . "\\calF_{t-1}") (100 . "# 2012-11-09 new;") (50 . "#+END_SRC\n\n#+BEGIN_SRC R\n") (49 . "@ \n\n<<>>=\n") (114 file . "c:/Users/Georgi/Emacs/esk24/starter-kit-registers.org") (115 file . "c:/Users/Georgi/Emacs/esk24/starter-kit.org") (73 file . "c:/Users/Georgi/Emacs/esk24/Georgi") (105 file . "c:/Users/Georgi/Emacs/esk24/init.el")))
+(setq file-name-history '("~mcbssgb2/" "~/Az/Rdevel/GKF/NEWS.md" "~/Az/Rdevel/GKF/" "~/Az/Rdevel/GKF/NEWS.md" "~/Az/Rdevel/GKF/DESCRIPTION" "~mcbssgb2/" "c:/Users/mcbssgb2/Az/Rdevel/GKF/.Rbuildignore" "c:/Users/mcbssgb2/Az/Rdevel/GKF/vignettes/REFERENCES.bib" "~/Az/Rdevel/GKF/" "c:/Users/mcbssgb2/Az/Rdevel/GKF/man/GKF-package.Rd" "~/Az/Rdevel/GKF/man/GKF-package.Rd" "c:/Users/mcbssgb2/Az/Rdevel/GKF/GKF-package.Rd" "~/Az/Rdevel/GKF/" "~/Az/Rdevel/bitbucket/poarx/" "c:/Users/mcbssgb2/Az/Rdevel/bitbucket/poarx/README.txt" "~/Az/Rdevel/Rdpack/Org/" "c:/Users/mcbssgb2/MyHomes/mytexmf/bibtex/bib/bosh/BoshMajor.bib" "c:/Users/mcbssgb2/MyHomes/mytexmf/tex/latex/bosh/basic/bosh3.bbx" "~/Az/papers/tsbook/" "~mcbssgb2/" "c:/Users/mcbssgb2/Az/Teaching/ts/Coursework/ExampleSheets/Es06estAndSarimaSol.tex" "c:/Users/mcbssgb2/Az/Teaching/ts/Coursework/ExampleSheets/Es06estAndSarima.tex" "~/Az/papers/tsbook/" "~/Az/Pari/pari.org" "~/Az/Rdevel/Rdpack/Org/" "~/Az/papers/VariogramStatistical/Variogram paper/response.tex" "c:/Users/mcbssgb2/Az/papers/VariogramStatistical/Variogram paper/Variogram-PaperCSSC_rev.tex" "~/Az/papers/VariogramStatistical/Variogram paper/Ref1.bib" "~/Az/homepage/tswa/index.html" "~/Az/homepage/tsaf/index.html" "c:/Users/mcbssgb2/Az/homepage/tswa/index.org" "c:/Users/mcbssgb2/Az/Teaching/ts/Coursework/ExampleSheets/Es05armaacfSol.tex" "c:/Users/mcbssgb2/Az/Teaching/ts/Coursework/ExampleSheets/Es05armaacf.tex" "c:/Users/mcbssgb2/Az/homepage/tsaf/index.org" "~/Az/homepage/tswa/index.html" "c:/Users/mcbssgb2/Az/homepage/tswa/index.org" "c:/Users/mcbssgb2/Az/Teaching/ts/Handouts/xsarima2p1/xsarima2p1aa.R" "~/Az/homepage/tswa/index.html" "~/Az/homepage/tsaf/index.html" "c:/Users/mcbssgb2/Az/homepage/tsaf/index.org" "c:/Users/mcbssgb2/Az/homepage/tswa/index.org" "c:/Users/mcbssgb2/Az/Teaching/ts/Handouts/armaacfHat/armaacfHat.R" "c:/Users/mcbssgb2/MyHomes/pcLecturesDisk/psi/chisqNew.R" "c:/Users/mcbssgb2/MyHomes/pcLecturesDisk/psi/mcNew.R" "~/Az/homepage/psi/index.html" "c:/Users/mcbssgb2/MyHomes/pcLecturesDisk/psi/ks.R" "~/Az/Teaching/Psi/Coursework/Ass03.tex" "c:/Users/mcbssgb2/Az/Teaching/Psi/Coursework/Ass03_y1617.tex" "~/Az/homepage/psi/index.html" "c:/Users/mcbssgb2/Az/papers/VariogramStatistical/Variogram paper/Variogram-PaperCSSC_rev.tex" "c:/Users/mcbssgb2/Az/Rdevel/Rdpack/.gitignore" "~/Az/Rdevel/Rdpack/Org/00ReadMe" "~/Az/Rdevel/Rdpack/DESCRIPTION" "c:/Users/mcbssgb2/Az/Rdevel/Rdpack/R/bib.R" "c:/Users/mcbssgb2/Az/Rdevel/gbWork/inst/REFERENCES.bib" "c:/Users/mcbssgb2/Az/Rdevel/gbWork/DESCRIPTION" "c:/Users/mcbssgb2/Az/Rdevel/gbWork/man/check_myargnames.Rd" "~/Az/Rdevel/Rdpack/Org/bib/tryNatbib.tex" "c:/Users/mcbssgb2/Az/Pari/pari.org" "~/Az/papers/VariogramStatistical/Variogram paper/Ref1.bib" "~/Az/papers/VariogramStatistical/Variogram paper/" "c:/Users/mcbssgb2/Az/Teaching/ts/Coursework/ExampleSheets/t04aBlpBasicsSol.tex" "c:/Users/mcbssgb2/Az/Teaching/ts/Coursework/ExampleSheets/t04dBlpSol.tex" "~/Az/Rdevel/Rdpack/Org/" "c:/Users/mcbssgb2/Az/Rdevel/gbWork/man/gbWork_base_src_dir.Rd" "c:/Users/mcbssgb2/Az/Rdevel/Rdpack/man/insert_ref.Rd" "~/Az/Rdevel/Rdpack/Org/bug/bug.bib" "~/Az/papers/tsbook/" "c:/Users/mcbssgb2/MyHomes/myEmacs/gb.org" "c:/Users/mcbssgb2/MyHomes/myEmacs/xha01.el" "c:/Users/mcbssgb2/MyHomes/myEmacs/setup-keys.el" "c:/Users/mcbssgb2/Az/Work/People/Anica/AnicaKostic.tex" "~/Az/Work/People/00YueyunZhu/YueyunZhu.tex" "c:/Users/mcbssgb2/Az/Rdevel/gbWork/" "c:/Users/mcbssgb2/Az/Rdevel/bitbucket/poarx/JTSA-NoFootball/JTSABib.bib" "c:/Users/mcbssgb2/Az/Rdevel/bitbucket/poarx/JTSA-NoFootball/JTSA.tex" "~/Az/Rdevel/Rdpack/Org/" "~/Az/homepage/Publications/publications.html" "~/Az/homepage/Publications/index.html" "c:/Users/mcbssgb2/Az/homepage/Publications/boshweb.bib" "~/Az/Rdevel/sarima_project/sarima/" "c:/Users/mcbssgb2/Az/Rdevel/sarima_project/.gitignore" "~/Az/Rdevel/sarima_project/sarima/NEWS" "~/Az/Rdevel/sarima_project/sarima/Org/" "~/Az/Rdevel/Rdpack/Org/" "~/Az/Rdevel/sarima_project/sarima/Org/" "c:/Users/mcbssgb2/Az/Teaching/Interact/y1718/Maths-UG-student_personal_webpages.csv" "c:/Users/mcbssgb2/Az/Teaching/Interact/y1718/emailsAz.csv" "c:/Users/mcbssgb2/Az/Teaching/Interact/y1718/Maths-UG-student_personal_webpages.csv" "c:/Users/mcbssgb2/Az/Rdevel/psistat/README.org" "c:/Users/mcbssgb2/Az/Rdevel/psistat/.gitignore" "c:/Users/mcbssgb2/Az/Rdevel/fguigb/README.org" "c:/Users/mcbssgb2/Az/Rdevel/gbRd/README.org" "~/Az/homepage/index.html" "c:/Users/mcbssgb2/Az/homepage/psi/index.org" "~/Az/homepage/index.html" "~/Az/homepage/index.org" "~/Az/homepage/Rpackages/index.html" "~/Az/homepage/Rpackages/" "~/Az/homepage/emacs/index.html"))
+
+;; Buffer section -- buffers listed in same order as in buffer list:
+(desktop-create-buffer 208
+  nil
+  "vignettes"
+  'dired-mode
+  '(hi-lock-mode TeX-PDF-mode)
+  1542
+  '(1 nil)
+  t
+  '("~/Az/Rdevel/GKF/vignettes/")
+  nil
+  '((mark-ring (1 1 1542 1542 1542 834 1542))))
+
+(desktop-create-buffer 208
+  "~/Az/Rdevel/GKF/NEWS.md"
+  "NEWS.md"
+  'markdown-mode
+  '(auto-fill-mode ess-r-package-mode hi-lock-mode TeX-PDF-mode)
+  94
+  '(1 nil)
+  nil
+  nil
+  '((tab-width . 4) (buffer-file-coding-system . undecided-unix) (fill-column . 80))
+  '((mark-ring (179 1 55 104 93))))
+
+(desktop-create-buffer 208
+  "~/Az/Rdevel/GKF/vignettes/REFERENCES.bib"
+  "REFERENCES.bib"
+  'bibtex-mode
+  '(hi-lock-mode TeX-PDF-mode)
+  489
+  '(249 nil)
+  nil
+  nil
+  '((buffer-file-coding-system . utf-8-unix) (TeX-master . t))
+  '((mark-ring (1 4398 339 1 386 1 386 234 1 778 810 1 853 778 246 489))))
+
+(desktop-create-buffer 208
+  nil
+  "GKF"
+  'dired-mode
+  '(ess-r-package-mode hi-lock-mode TeX-PDF-mode)
+  1042
+  '(1 nil)
+  t
+  '("~/Az/Rdevel/GKF/")
+  nil
+  '((mark-ring (1 1))))
+
+(desktop-create-buffer 208
+  "~/Az/Rdevel/GKF/DESCRIPTION"
+  "DESCRIPTION"
+  'text-mode
+  '(auto-fill-mode ess-r-package-mode hi-lock-mode TeX-PDF-mode)
+  75
+  '(1388 nil)
+  nil
+  nil
+  '((buffer-file-coding-system . undecided-dos) (fill-column . 80))
+  '((mark-ring (106 419 1388 1296 626 617 617 617 1198 1176 1166 1145 93 90 93 75))))
+
+(desktop-create-buffer 208
+  "~/Az/Rdevel/GKF/vignettes/vignette.Rnw"
+  "vignette.Rnw"
+  'latex-mode
+  '(ess-noweb-font-lock-mode ess-noweb-mode auto-fill-mode visual-line-mode hi-lock-mode TeX-PDF-mode reftex-mode)
+  54000
+  '(54000 t)
+  nil
+  nil
+  '((indent-tabs-mode) (buffer-file-coding-system . utf-8-unix) (truncate-lines))
+  '((mark-ring (1 12673 12134 1 14261 13932 13848 13887 13576 13538 13022 13985 13932 13534 13534 14375))))
+

@@ -1,0 +1,25 @@
+useDynLib(GKF)
+importFrom(Rcpp, evalCpp)
+import(Matrix,MASS)
+
+importFrom(numDeriv,jacobian)
+importFrom(numDeriv,hessian)
+
+## importFrom(FKF,fkf)
+
+## importFrom(dlm,dlmModPoly)
+## importFrom(dlm,dlmFilter)
+## importFrom(dlm,dropFirst)
+## importFrom(dlm,dlmBSample)
+
+## exportPattern("^[[:alpha:]]+")
+export(InvMat,
+       nearPD,
+       Robust_chol,
+       FKF,
+       NRUpdatingStep,
+       thetaSampling,
+       GaussianSignalSmoothing,
+       GaussianthetaSampling,
+       PosteriorSignalMode,
+       PosteriorSignalSampling)

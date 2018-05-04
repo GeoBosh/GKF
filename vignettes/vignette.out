@@ -1,0 +1,30 @@
+\BOOKMARK [1][-]{section.1}{The Model}{}% 1
+\BOOKMARK [1][-]{section.2}{Defining and manipulating state space models with GKF}{}% 2
+\BOOKMARK [2][-]{subsection.2.1}{Defining state space models with GKF}{section.2}% 3
+\BOOKMARK [3][-]{subsubsection.2.1.1}{Autoregressive moving average model}{subsection.2.1}% 4
+\BOOKMARK [1][-]{section.3}{Maximum Likelihood Estimation}{}% 5
+\BOOKMARK [2][-]{subsection.3.1}{The local level model}{section.3}% 6
+\BOOKMARK [2][-]{subsection.3.2}{The Nile River dataset}{section.3}% 7
+\BOOKMARK [1][-]{section.4}{Filtering and Smoothing with GKF}{}% 8
+\BOOKMARK [2][-]{subsection.4.1}{Filtering}{section.4}% 9
+\BOOKMARK [3][-]{subsubsection.4.1.1}{Filtering for the Local Level Model}{subsection.4.1}% 10
+\BOOKMARK [3][-]{subsubsection.4.1.2}{Multivariate Linear Growth Model}{subsection.4.1}% 11
+\BOOKMARK [2][-]{subsection.4.2}{Smoothing}{section.4}% 12
+\BOOKMARK [1][-]{section.5}{Sampling Smoother with GKF}{}% 13
+\BOOKMARK [1][-]{section.6}{Additional multivariate example}{}% 14
+\BOOKMARK [2][-]{subsection.6.1}{A time varying linear Gaussian model: the Dynamic Capital Asset Pricing model}{section.6}% 15
+\BOOKMARK [1][-]{section.7}{A nonLinear non-Gaussian example: the Poisson scoring model}{}% 16
+\BOOKMARK [2][-]{subsection.7.1}{Computing the posterior mode}{section.7}% 17
+\BOOKMARK [2][-]{subsection.7.2}{Sampling from the proposal density}{section.7}% 18
+\BOOKMARK [2][-]{subsection.7.3}{Likelihood evaluation}{section.7}% 19
+\BOOKMARK [2][-]{subsection.7.4}{ A nonlinear non-Gaussian example}{section.7}% 20
+\BOOKMARK [3][-]{subsubsection.7.4.1}{The model}{subsection.7.4}% 21
+\BOOKMARK [3][-]{subsubsection.7.4.2}{The data}{subsection.7.4}% 22
+\BOOKMARK [3][-]{subsubsection.7.4.3}{Study a nonlinear non-Gaussian model with GKF}{subsection.7.4}% 23
+\BOOKMARK [1][-]{section.8}{Conclusion}{}% 24
+\BOOKMARK [1][-]{appendix.A}{Multivariate regression theory: Basic result}{}% 25
+\BOOKMARK [1][-]{appendix.B}{The nearest covariance matrix to a given symmetric matrix}{}% 26
+\BOOKMARK [1][-]{appendix.C}{An efficient way to compute the signal log-likelihood}{}% 27
+\BOOKMARK [2][-]{subsection.C.1}{Recursive computation of the observation covariance matrix inverse}{appendix.C}% 28
+\BOOKMARK [2][-]{subsection.C.2}{Recursive computation of the signal log-likelihood}{appendix.C}% 29
+\BOOKMARK [1][-]{appendix.D}{Bias corection in the log-likelihood evaluation}{}% 30
