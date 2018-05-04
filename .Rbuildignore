@@ -1,3 +1,4 @@
+^README.org
 ^vignettes/.*[.]bbl
 ^vignettes/.*[.]blg
 ^Org/
