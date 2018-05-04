@@ -1,0 +1,27 @@
+#+PROPERTY: header-args:R   :cache yes :session readme-r :results value :exports both
+#+OPTIONS: toc:nil
+#+TITLE: Generalized Kalman Filter
+
+This is a fast and flexible implementation of the Kalman filter, which can deal
+with missing values and non-positive definite matrices for the variance of the
+disturbances of the measurement equation. It is mostly written in C++ and relies
+fully on linear algebra subroutines contained in the Armadillo library. Due to
+the speed of the filter, the fitting of high-dimensional linear state space
+models to large datasets is feasible. The package also treats nonlinear and
+non-Gaussian models and allows signal smoothing and sampling from the (signal)
+posterior distribution.
+
+* Installing GKF
+
+# Install the  [[https://cran.r-project.org/package=GKF][latest stable version]] from CRAN:
+# #+BEGIN_EXAMPLE
+# install_packages("GKF")
+# #+END_EXAMPLE
+
+
+You can also install the [[https://github.com/GeoBosh/GKF][development version]] of =GKF= from Github:
+#+BEGIN_EXAMPLE
+library(devtools)
+install_github("GeoBosh/GKF")
+#+END_EXAMPLE
+
