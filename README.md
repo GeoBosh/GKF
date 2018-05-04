@@ -15,3 +15,5 @@ You can install the [development version](https://github.com/GeoBosh/GKF) of `GK
     library(devtools)
     install_github("GeoBosh/GKF")
 
+See the [vignette](https://github.com/GeoBosh/GKF/blob/master/vignettes/vignette.pdf).
+

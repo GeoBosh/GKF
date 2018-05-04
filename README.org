@@ -25,3 +25,5 @@ library(devtools)
 install_github("GeoBosh/GKF")
 #+END_EXAMPLE
 
+See the [[https://github.com/GeoBosh/GKF/blob/master/vignettes/vignette.pdf][vignette]].
+
