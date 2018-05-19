@@ -79,10 +79,11 @@ GaussianthetaSampling(a0, P0, dt, ct, Tt, Zt, Ht, Qt, yt, M,
 
 }
 \seealso{
-  \code{FKF}, \code{NRUpdatingStep}
+  \code{\link{FKF}}, \code{\link{NRUpdatingStep}}
 }
 \examples{
-## See Examples in package-vignette
+## See Examples in the vignette:
+vignette("vignette", package = "GKF")
 }
-\keyword{Simulation-Smoothing}
-\keyword{Kalman-Filter}
+\keyword{ts}
+\keyword{Kalman}

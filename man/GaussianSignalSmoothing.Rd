@@ -4,7 +4,7 @@
   Gaussian signal smoothing.
 }
 \description{
-  The function apply Kalman smoother to compute smoothed values of the
+  The function applies Kalman smoother to compute smoothed values of the
   signal vectors, together with their variance-covariance matrices in
   the linear Gaussian case.
 }
@@ -36,10 +36,8 @@ GaussianSignalSmoothing(a0, P0, dt, ct, Tt, Zt, Ht, Qt, yt,
 }
 \details{
 
-  The computation follows the Durbin-Koopman(2012,chap 4.5.3)
-  \insertCite{@@durbin2012time, chapter 4.5.3}{GKF}, backward recursions
-  and calls \code{FKF} to compute the Kalman Filter quantites
-  beforehand.
+  The computation uses the backward recursions of 
+  \insertCite{@@durbin2012time, chapter 4.5.3;textual}{GKF}. 
 
 }
 \value{
@@ -59,10 +57,11 @@ GaussianSignalSmoothing(a0, P0, dt, ct, Tt, Zt, Ht, Qt, yt,
   Tarak Kharrat and Georgi N. Boshnakov
 }
 \seealso{
-\code{NRUpdatingStep}
+\code{\link{NRUpdatingStep}}
 }
 \examples{
-## See Examples in the vignette
+## See Examples in the vignette:
+vignette("vignette", package = "GKF")
 }
-\keyword{Signal-Smoothing}
-\keyword{Posterior-Signal-mode}
+\keyword{ts}
+\keyword{Kalman}

@@ -99,12 +99,16 @@ Oxford University Press.
   Tarak Kharrat
 }
 \seealso{
-        \code{thetaSampling}, \code{GaussianthetaSampling}, \code{PosteriorSignalMode}
+  \code{\link{thetaSampling}},
+  \code{\link{GaussianthetaSampling}},
+  \code{\link{PosteriorSignalMode}}
 }
 \examples{      
-## See Examples in package-vignette
+## See Examples in the vignette:
+vignette("vignette", package = "GKF")
 }
 % Add one or more standard keywords, see file 'KEYWORDS' in the
 % R documentation directory.
-\keyword{Simulation-Smoothing}
+\keyword{ts}
+\keyword{Kalman}
 

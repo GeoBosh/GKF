@@ -14,10 +14,8 @@
 InvMat(input)
 }
 \arguments{
-  \item{input}{
-  A \code{matrix} to be inverted.}
+  \item{input}{A \code{matrix} to be inverted.}
 }
-
 \details{
 
   The matrix inverse is computed directly by the \code{inv} routine in
@@ -25,22 +23,19 @@ InvMat(input)
   \code{1e-12}. In this case, the matrix diagonal is inflated by small
   number (\code{1e-6}) and \code{inv} is used again. This trick avoids
   the use of the Cholesky decomposition which requires the matrix to be
-  definite positive (and fails if the matrix is nearly singular).  }
+  definite positive (and fails if the matrix is nearly singular).
 
-\author{
-        Tarak Kharrat
 }
-
+\author{
+  Tarak Kharrat
+}
 \seealso{
 \code{solve}
 }
-
 \examples{
 set.seed(345) 
-M = matrix(rnorm(16),4,4)
-print(sum(solve(M)-InvMat(M)))
-
+M <- matrix(rnorm(16), 4, 4)
+sum(solve(M) - InvMat(M))
 }
-
-\keyword{Matrix-Inversion}
-
+\keyword{algebra}
+\keyword{array}

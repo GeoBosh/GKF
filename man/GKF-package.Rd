@@ -51,12 +51,14 @@ Sanderson C and others (2010).
 \emph{Report Version}, \bold{2}.
 % end:bibentry:  sanderson2010armadillo
 }
-\keyword{ package }
-\keyword{Kalman-Filter }
 \seealso{
   %~~ \code{\link[<pkg>:<pkg>-package]{<pkg>}} ~~
-   \code{dlm}, \code{KFAS}, \code{FKF} 
+  packages \code{KFAS}, \code{dlm}, \code{FKF} 
 }
 \examples{
-"See Examples in package-vignette"
+## See Examples in the vignette:
+vignette("vignette", package = "GKF")
 }
+\keyword{package}
+\keyword{ts}
+\keyword{Kalman}

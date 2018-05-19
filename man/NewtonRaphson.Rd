@@ -1,7 +1,7 @@
 \name{NRUpdatingStep}
 \alias{NRUpdatingStep}
 \title{
-Newton-Raphson updating step for computing the posterior mode.
+Newton-Raphson updating step for computing the posterior mode
 }
 \description{
   
@@ -72,10 +72,11 @@ NRUpdatingStep(a0,P0,dt,ct,Tt,Zt,Ht,Qt,yt,checkInputs = TRUE)
 }
 
 \seealso{
-        \code{GaussianSignalSmoothing}
+        \code{\link{GaussianSignalSmoothing}}
 }
 \examples{
-"See Examples in package-vignette"
+## See Examples in the vignette:
+vignette("vignette", package = "GKF")
 }
-\keyword{Kalman-Filter}
-\keyword{Posterior-Signal-mode}
+\keyword{ts}
+\keyword{Kalman}

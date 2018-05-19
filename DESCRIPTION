@@ -2,7 +2,7 @@ Package: GKF
 Type: Package
 Title: Generalized Kalman Filter
 Version: 1.7.0
-Date: 2018-03-30
+Date: 2018-05-19
 Authors@R: c(person(given = "Tarak", family = "Kharrat",
                     role = "aut",
                     email = "tarak.kharrat@gmail.com"),

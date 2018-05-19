@@ -5,10 +5,10 @@
 }
 \description{
 
-  This function allows for fast and flexible Kalman filtering. Both, the
-  measurement and transition equation may be multivariate and parameters
-  are allowed to be time-varying. In addition, missing values,
-  \code{NA}, in the observations are supported.
+  Fast and flexible Kalman filtering. Both, the measurement and
+  transition equation may be multivariate and parameters are allowed to
+  be time-varying. In addition, missing values, \code{NA}, in the
+  observations are supported.
 
 }
 \usage{
@@ -17,7 +17,7 @@ FKF(a0, P0, dt, ct, Tt, Zt, Ht, Qt, yt, ComputeThetaLik = FALSE,
 }
 %- maybe also 'usage' for other objects documented here.
 \arguments{
-  \item{a0}{A \code{vector} giving the initial value/estimation of the
+  \item{a0}{A \code{vector} giving the initial value/estimate of the
     state variable.} 
   \item{P0}{A \code{matrix} giving the variance of \code{a0}.}
   \item{dt}{A \code{matrix} giving the intercept of the transition
@@ -200,6 +200,8 @@ Sanderson C and others (2010).
   documentation for more details).
 }
 \examples{
-"See Examples in package-vignette"
+## See Examples in the vignette:
+vignette("vignette", package = "GKF")
 }
-\keyword{Kalman-Filter}
+\keyword{ts}
+\keyword{Kalman}

@@ -92,12 +92,14 @@ PosteriorSignalMode(a0, P0, dt, ct, Tt, Zt, Qt, yt, jac, hess,
   \insertAllCited{}
 }
 \author{
-        Tarak Kharrat and Georgi N. Boshnakov
+  Tarak Kharrat and Georgi N. Boshnakov
 }
 \seealso{
-        \code{NRUpdatingStep},\code{GaussianSignalSmoothing}
+  \code{\link{NRUpdatingStep}}, \code{\link{GaussianSignalSmoothing}}
 }
 \examples{
-"See Examples in package-vignette"
+## See Examples in the vignette:
+vignette("vignette", package = "GKF")
 }
-\keyword{Posterior-Signal-mode}
+\keyword{ts}
+\keyword{Kalman}

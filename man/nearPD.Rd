@@ -81,19 +81,19 @@ nearPD(x,w, corr = FALSE, keepDiag = FALSE, EnforcePosDef = TRUE,
 
 \examples{
 ## Higham(2002), p.334f - simple example
-A <- matrix(1, 3,3); A[1,3] <- A[3,1] <- 0
-n.A_Rcpp <- nearPD(A, corr=TRUE)
-stopifnot(all.equal(0.7593000,n.A_Rcpp$mat[1,2],tolerance=1e-6),
-          all.equal(0.1577192,n.A_Rcpp$mat[1,3],tolerance=1e-6))
+A <- matrix(1, 3, 3); A[1, 3] <- A[3, 1] <- 0
+n.A_Rcpp <- nearPD(A, corr = TRUE)
+stopifnot(all.equal(0.7593000, n.A_Rcpp$mat[1, 2], tolerance = 1e-6),
+          all.equal(0.1577192, n.A_Rcpp$mat[1, 3], tolerance = 1e-6))
     
 set.seed(27)
-m <- matrix(round(rnorm(25),2), 5, 5)
+m <- matrix(round(rnorm(25), 2), 5, 5)
 m <- m + t(m)
 diag(m) <- pmax(0, diag(m)) + 1
 (m <- round(cov2cor(m), 2))
     
 near.m_Rcpp <- nearPD(m)
-stopifnot(all.equal(near.m_Rcpp$normF,0.9412029,tolerance=1e-6))
+stopifnot(all.equal(near.m_Rcpp$normF, 0.9412029, tolerance = 1e-6))
     
 ## A longer example, extended from Jens' original,
 ## showing the effects of some of the options:
@@ -105,8 +105,9 @@ pr <- matrix(c(1,     0.477, 0.644, 0.478, 0.651, 0.826,
                0.826, 0.75,  0.742, 0.8,   0.798, 1),
              nrow = 6, ncol = 6)
     
-nc1_Rcpp <- nearPD(pr, conv_tol = 1e-7,posd_tol  = 1e-4)
-stopifnot(all.equal(nc1_Rcpp$normF,0.06304718,tolerance=1e-6),
-          all.equal(min(nc1_Rcpp$eigenvalues),0.0004212751,tolerance=1e-6))
+nc1_Rcpp <- nearPD(pr, conv_tol = 1e-7, posd_tol = 1e-4)
+stopifnot(all.equal(nc1_Rcpp$normF, 0.06304718, tolerance = 1e-6),
+          all.equal(min(nc1_Rcpp$eigenvalues), 0.0004212751, tolerance = 1e-6))
 }
-\keyword{Matrix-Factorization}
+\keyword{algebra}
+\keyword{array}

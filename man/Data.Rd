@@ -6,11 +6,13 @@
   Data used in the vignette examples
 }
 \description{
-  The package is shipped with 4 data sets used in the examples described in the
+  The package is shipped with 4 data sets used in the examples in the
   vignette.
 }
 \usage{data(GKF_data)}
 \format{
+  The four datasets are in a single object, \code{GKF_data}, which is a
+  list with a component for each dataset.
   The format is:
   \preformatted{  
 List of 4
@@ -35,19 +37,19 @@ List of 4
 }
 \details{
   
-  The first two data sets \code{longGoals} and \code{shortGoals} are
-  goals scored by 10 English Premier league in the past seasons. Only
-  the length of the observation time is different.  Those data sets are
-  used in the nonlinear non-Gaussian example.
+  The first two datasets, \code{longGoals} and \code{shortGoals}, are
+  goals scored by 10 English Premier league teams in the past
+  seasons. Only the length of the observation time is different.  Those
+  data sets are used in the nonlinear non-Gaussian example.
 
-  The \code{invest} corresponds to the Seemingly unrelated time series
-  example proposed in Petris (2009, chap 3.3.2) and representing the
-  annual Denmark and Spain investments .
+  The dataset \code{invest} contains data about annual Denmark and Spain
+  investments. It corresponds to the Seemingly unrelated time series
+  example proposed in Petris (2009, chap 3.3.2)
 
-  The last data set \code{CAPMData} corresponds to the Seemingly
-  unrelated regression models example proposed in Petris (2009, chap
-  3.3.3) and representing the the monthly returns for the Mobil, IBM,
-  Weyer,and Citicorp stocks, 1978.1-1987.12.
+  The dataset \code{CAPMData} fives the monthly returns for the Mobil,
+  IBM, Weyer, and Citicorp stocks, 1978.1-1987.12. It corresponds to the
+  Seemingly unrelated regression models example proposed in Petris
+  (2009, chap 3.3.3)
 
 }
 \source{
@@ -68,5 +70,16 @@ Springer.
 \examples{
 data(GKF_data)
 str(GKF.data)
+names(GKF.data)
+
+dim(GKF.data$longGoals)
+summary(GKF.data$longGoals["Arsenal", ])
+
+dim(GKF.data$shortGoals)
+GKF.data$shortGoals[1:6, 1:10]
+summary(GKF.data$shortGoals["Arsenal", ])
+
+plot(ts(GKF.data$invest))
+plot(GKF.data$CAPMData)
 }
 \keyword{datasets}
