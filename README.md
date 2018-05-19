@@ -17,3 +17,6 @@ You can install the [development version](https://github.com/GeoBosh/GKF) of `GK
 
 See the [vignette](https://github.com/GeoBosh/GKF/blob/master/vignettes/vignette.pdf).
 
+The package passes the CRAN quality control checks, if there is interest, we would publish it
+there.
+

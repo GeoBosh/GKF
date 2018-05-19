@@ -27,3 +27,5 @@ install_github("GeoBosh/GKF")
 
 See the [[https://github.com/GeoBosh/GKF/blob/master/vignettes/vignette.pdf][vignette]].
 
+The package passes the CRAN quality control checks, if there is interest, we would publish it
+there.

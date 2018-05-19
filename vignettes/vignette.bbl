@@ -35,7 +35,7 @@ Durbin, J. and Koopman, S.~J. (2002).
 
 \bibitem[Durbin and Koopman, 2012]{durbin2012time}
 Durbin, J. and Koopman, S.~J. (2012).
-\newblock {\em Time series analysis by state space methods.Second edition}.
+\newblock {\em Time series analysis by state space methods. Second edition}.
 \newblock Oxford University Press.
 
 \bibitem[Fr{\"u}hwirth-Schnatter, 1994]{fruhwirth1994data}
@@ -50,7 +50,7 @@ Helske, J. (2017).
 
 \bibitem[Higham, 2002]{higham2002computing}
 Higham, N.~J. (2002).
-\newblock Computing the nearest correlation matrix—a problem from finance.
+\newblock Computing the nearest correlation matrix --- a problem from finance.
 \newblock {\em IMA journal of Numerical Analysis}, 22(3):329--343.
 
 \bibitem[Jungbacker and Koopman, 2007]{jungbacker2007monte}

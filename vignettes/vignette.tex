@@ -58,7 +58,7 @@
 
 % $
 
-\title{\GKF Package Example (Version 1.6)}
+\title{\GKF Package Example (Version 1.7.0)}
 \author{Tarak Kharrat and Georgi N. Boshnakov}
 \maketitle
 
@@ -78,13 +78,17 @@ examples. We refer readers interested in a more theoretical treatement to
 \citet{durbin2012time}. We do not restrict our treatment to the \GKF package but alternatives
 using other \R packages (when it is possible) are presented. This approach has two
 advantages: validate the computation done by \GKF and allow users to choose between the
-different tools.
+different tools. 
 
-\begin{comment}
-  We need here a review of what packages like FKF, dlm, KFAS do and don't do (and we do).
-
-  Addition in March 2018: see also \citet{KFASjss2017}
-\end{comment}
+% We need here a review of what packages like FKF, dlm, KFAS do and don't do (and we do).
+% TODO: dlm?
+As of May 2018, the most complete implementation seems to be provided by package
+\texttt{KFAS}, which has excellent documentation, see \citet{KFASjss2017}.  Our package \GKF
+may be attractive if direct support of intercept terms in the observation and/or the state
+equations is desired (with \texttt{KFAS} this requires a little bit of effort). Package \texttt{FKF}
+also supports intercept terms in the state and observation equations but has been archived on
+CRAN for some time (\GKF can be used as an almost drop in replacement see the examples in the
+following sections).
 
 The remainder of this paper is structured as follows. In Section~\ref{sec:modelDef} we recall
 the state space model, set the notation framework and show how to define such models with
@@ -152,13 +156,14 @@ defined by the following (transition) equation:
   \label{eq:Transition}
 \end{equation}
 where $\alpha_t$ ($m \times 1$) is the state vector, $d_t$ ($m \times 1$) is the intercept,
-$T_t$ ($m \times m$) is the factor
-\textbf{(fixme: is this usual?  transition/state/system)}
+$T_t$ ($m \times m$) is the 
+transition (state)
 matrix and $\eta_t$ ($m \times 1$) is the innovation (with ($m \times m$) variance matrix
 $Q_t$) of the transition equation. The vector $d_t$ and matrices $T_t$ and $Q_t$ can partly
 depend on the parameter vector $\psi$ and be partly fixed and known for $t=1,\dots, n$. The
 matrix $Q_t$ is only required to be \textbf{positive semi-definite}. The initial state vector
-$\alpha_{0}$ \textbf{(fixme: $\alpha_{1}$ or $\alpha_{0}$?)}
+$\alpha_{0}$ 
+% TODO: check: \textbf{(fixme: $\alpha_{1}$ or $\alpha_{0}$?)}
 is normally distributed with mean $a$ and variance $P_{0}$. The innovations $\eta_t$ are
 serially independent and are independent of the initial state vector for $t=1,\dots, n$.
 
@@ -262,8 +267,8 @@ parameter names in package fkf.
 The time series is a $(d\times n)$ matrix, where $d$ is the dimension of the time series.
 
 A consistency check is done in each function (before computation starts) which can be
-switched off by setting \verb@checkInputs@ to \verb@FALSE@. We advise users to keep
-\verb@checkInputs@ \verb@TRUE@ unless the performance becomes crucial and correctness of the
+switched off by setting \verb@checkInputs@ to \verb@FALSE@. It is prudent to keep
+\verb@checkInputs = TRUE@ unless the performance becomes crucial and correctness of the
 arguments is ensured.
 
 
@@ -342,7 +347,7 @@ usual convention is to set the diffuse initial matrix to a diagonal matrix, e.g.
 > P0 <- diag(1e6, nrow = 2, ncol = 2)
 \end{Sinput}
 \end{Schunk}
-but we keep the original function from FKF.
+but we keep the original function from FKF for comparative purposes.
 
 Here we simulate from an $\text{ARMA}(2,1)$ process. 
 \begin{Schunk}
@@ -367,10 +372,6 @@ This prepares the model and the time series for \GKF:
 The time series is transformed to a matrix with one row, since this is a univariate time
 series.
 
-\begin{comment}
-  G: Strictly speaking, for the unconditional log-likelihood we need the exact initial
-  cov. matrix, unless we estimate $P_{0}$ along with the other param.
-\end{comment}
 We can compute, for example, the unconditional log-likelihood of the process and check the
 result against the computation of the \texttt{FKF} package
 \begin{Schunk}
@@ -435,7 +436,7 @@ The Nile River dataset is shipped with \R and represents the measurements of the
 of the river at Ashwan betwenn 1871 and 1970 (100 observation). The local level model with
 unknown measurement and transition variances is knowm to describe the data reasonably
 well. The following peace of code show how to fit this model to the data using \verb@optim@
-to minimize the inverse of the log-likelihood. We also assume that some observation are
+to minimize the inverse of the log-likelihood. We also assume that some observations are
 missing to illustrate how \GKF treats \verb@NA@ (missing values are respresented by
 \verb@NA@)
 \begin{Schunk}
@@ -463,6 +464,8 @@ missing to illustrate how \GKF treats \verb@NA@ (missing values are respresented
 \end{Schunk}
 
 % $
+
+The objects created above are used in the examples in the following sections.
 
 \section{Filtering and Smoothing with \GKF}
 \label{sec:FilterSmoothing}
@@ -622,13 +625,15 @@ while the measurement equation is given by
   ,
   \label{eq:LinearGrowthObs}
 \end{equation}
-with $(\epsilon_{1,t},\epsilon_{2,t})^\prime  \sim \mathcal{N}(0,H)$, where $H$ is allowed to be non-diagonal.
+with $(\epsilon_{1,t},\epsilon_{2,t})^\prime \sim \mathcal{N}(0,H)$, where $H$
+is allowed to be non-diagonal.
 
-In order to illustrate the previous example, we use the data described in
-\citet[chap. 3.3.2]{petris2009dynamic} and representing the annual investment in Denmark and
-Spain from 1960 to 2000. This dataset was collected from \citet{petris2009dynamic} book
-website \footnote{\url{http://definetti.uark.edu/~gpetris/dlm/}} and is shipped with the \GKF
-package.
+In order to illustrate the previous example, we use data on the annual
+investment in Denmark and Spain from 1960 to 2000 \citep[described
+in][chap. 3.3.2]{petris2009dynamic}.  This dataset was collected from
+\citet{petris2009dynamic} book website
+\footnote{\url{http://definetti.uark.edu/~gpetris/dlm/}} and is shipped with the
+\GKF package.
 
 For this model we compare results from packages \texttt{dlm} (\cite{petris2010dlm}) and
 \GKF. We start by loading the data:
@@ -724,6 +729,8 @@ applying the appropriate linear transformation. Again, the technical result reca
 
 We illustrate now how to obtain the smoothed signal for the (multivariate) linear growth
 example discussed earlier using \GKF.  Figure~\ref{fig:LGSmooth}
+% TODO: use LaTeX package "varioref" for better wording of the page reference
+%       when it happens to be on the same page
 (page~\pageref{fig:LGSmooth}) compares Spain annual investment data with filtered and
 smoothed signal values.
 \begin{figure}[htbp]
@@ -778,9 +785,9 @@ has been suggested as early as 1994 by \citet{fruhwirth1994data} followed by
 from the last cited paper was suggested by \citet{durbin2002simple} and recalled in
 \citet[chap. 4.9]{durbin2012time}. This last technique also known as simulation smoothing by
 mean corrections is the one implemented in \GKF. Note that only simulation smoother from the
-signal conditional distribution is available in \GKF version 1.6.
+signal conditional distribution is available in \GKF version 1.7.0.
 
-An other family of simulation based algorithms known as Forward Filtering Backward Sampling
+Another family of simulation based algorithms known as Forward Filtering Backward Sampling
 (FFBS) has been developed independently by \citet{carter1994gibbs} and
 \citet{shephard1994partial}. The algorithm consists essentially in a simulation version of
 the Kalman smoother. This alternative was implemented in \texttt{dlm}.
@@ -810,8 +817,9 @@ Then we use \GKF functions to produce and sample from the signal posterior distr
 +          M = 1)$theta
 \end{Sinput}
 \end{Schunk}
-Figure~\ref{fig:DiffSample} (page~\pageref{fig:DiffSample}) shows how bad the unconditional
-sample describes the data. On the other hand, the simulated sample provides a fair view.
+Figure~\ref{fig:DiffSample} (page~\pageref{fig:DiffSample}) shows just how badly
+the unconditional sample describes the data. On the other hand, the conditional 
+sample looks rather satisfactory.
 \begin{figure}[htbp]
   \centering
 \includegraphics{vignette-025}
@@ -1011,10 +1019,10 @@ If a sample from the posterior distribution of the betas is desired, one needs t
 \section{A nonLinear non-Gaussian example: the Poisson scoring model}
 \label{sec:nLnGaussian}
 
-In the nonlinear non-Gaussian case, the simplfying Gaussian assumption drops and hence
-computation is slightly more complicated. The model considered here is the transition
-Equation~\eqref{eq:Transition} together with the observation
-Equation~\eqref{eq:measurementH}.
+In the nonlinear non-Gaussian case, the simplfying Gaussian assumption is
+dropped and as a consequence the computations are slightly more complicated. The
+model considered here is the transition Equation~\eqref{eq:Transition} together
+with the observation Equation~\eqref{eq:measurementH}.
 
 \subsection{Computing the posterior mode}
 
@@ -1427,12 +1435,12 @@ elaborated model for forecasting football match results are referred to
 \label{sec:CL}
 
 In this paper we introduce the different functionalities available in package \GKF. To our
-knowledge, \GKF is the first \R package to offer facilities to fit non linear non-Gaussian
+knowledge, \GKF is the first \R package to offer facilities to fit non-linear non-Gaussian
 models when the observations are not assumed to come from a log-concave density. Most of the
-computation in \GKF are done in \texttt{C++} which makes it fast enough to be able to fit
+computation in \GKF are done in \texttt{C++}, which makes it fast enough to be able to fit
 high-dimensional state space models to large datasets. We showed in this paper different
 examples and how \GKF can be used to fit them. Although simple, these examples can be used as
-templates for more elaborated application. The package is also shipped with different
+templates for more elaborated application. The package is also shipped with several
 datasets to ease the reproduction of the presented computations.
 
 \bibliographystyle{apalike}
@@ -1556,7 +1564,7 @@ our confidence in the different elements of $A$. Package \GKF only allows diagon
 most natural choice) and the default for $W$ is $W=I$ which corresponds to the Forbenius
 norm.
 
-Let $S$ be the set of symmetric definite positive matrices and $U$ the set of symmetric
+Let $S$ be the set of symmetric positive definite matrices and $U$ the set of symmetric
 matrices with unit diagonal.  The solution of problem \eqref{eq:gammaA} is in the
 intersection of $S$ and $U$ and is the closest to $A$ (in the weighted Frobeinus norm).  The
 idea of the alternating projections method is to construct the solution iteratively by
